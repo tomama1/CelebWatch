@@ -1,0 +1,22 @@
+h1 {
+	color: white;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 100px;
+	}
+	
+body {
+
+	background-image: url("beyonce.gif");
+	background-size: cover;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	text-shadow: -1px 0 #7bc9ee, 0 1px #7bc9ee, 1px 0 #7bc9ee, 0 -1px #7bc9ee;
+	
+}
+
+searchsubmit {
+	background-color: #e6ffff;
+}
+

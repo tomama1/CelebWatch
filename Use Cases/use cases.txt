@@ -1,0 +1,31 @@
+1. Make Account
+Actor: Anyone
+PreCondition: No PreCondition
+PostCondition: Added Member to User Database, Access to website functions
+INSERT INTO Users ( ID, UserName, Password, Email ) values (  234, hanav, hello, han@bc.edu );
+
+2. Search Celebrities
+Actor: Member 
+PreCondition: Member Login
+PostCondition: Display list of celebrities 
+Select CelebName FROM Celebrities where CelebName is `%$searchname%` ;
+
+3. Add Celebrity to Favorites
+Actor: Member
+PreCondition:Member Login, Search Celebrities
+PostCondition: Added Celebrity to User Favorites (MyCelebs)
+SELECT ID FROM Celebrities JOIN MyCelebs ON CelebID = Celebrities.CelebID WHERE CelebID = ID;
+INSERT INTO MyCelebs (CelebID, UserID) VALUES ( $id, select UserID from Users WHERE Username = '$Username' );
+
+4. Request New Celebrity
+Actor: Member
+PreCondition: Member Login
+PostCondition: Added Request to Request Database
+INSERT INTO Requests (Celeb, UserID, RequestTime) values (Angela,(select ID from Users where Name = '$name'), NOW());
+
+
+5. Update Celebrity Database
+Actor: Admin
+PreCondition: Requests in Request Database
+PostCondition: Added Celebrity to Celebrity Database
+INSERT INTO Celebrities (ID, CelebName, Birthday, Facebook, Twitter, Instagram) values (111, Angela, 10/10/1020, `facebook.com/`, `twitter`, `instagram`);

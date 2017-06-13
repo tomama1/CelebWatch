@@ -1,0 +1,12 @@
+Project Proposal
+
+Names:
+	Angela Han
+	Eunice Kang
+	Matthew Toma
+
+We want to create a platform for people to be able to connect with their favorite celebrities on one website using the Instagram API and Twitter API.
+
+Users will first have to signup by creating a login and accepting a contract to not use the website for illegal purposes. They will then be able to search a celebrity and be shown recent activity from the celebrity's social networking accounts. They will also be able to post on a forum to chat with other users about their shared interest in their favorite celebrities.
+
+Admins update the celebrity database and moderate forums for any inappropriate actions. 

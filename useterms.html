@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>CelebWatch|MemberPage</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/lumen/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type = "text/javascript" src = "../js/celebValidate.js"></script>
+	</head>
+
+<!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="celebwatchmain.php">CelebWatch</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="memberpage.php">MemberPage <span class="sr-only">(current)</span></a></li>
+	        <li><a href="celebrities.php">Browse</a></li>
+	      </ul>
+	      <form method="get" name="search" class="navbar-form navbar-left" role="search" action="celebrities.php">
+	        <div class="form-group">
+	          <input type="text" class="form-control" name="searchedterm" placeholder="Search A Celeb!">
+	        </div>
+	        <button type="submit" name="searchsubmit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="logout.php">Logout</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+<!-- BODY -->
+	<body>
+		<div class="page-header container-fluid">
+			<h1>Terms of Use</h1>
+		</div>
+		<br>
+
+		<div class="container">
+			<p>
+			Welcome to CelebWatch! CelebWatch provides an easy way for you to view your favorite celebrities' social media all on one platform.
+			</p>
+			<ol>
+				<li>Registration and Account Security
+					<ul>
+						<li>You will not create more than one personal account.</li>
+						<li>You are responsible for keeping your password secure.</li>
+						<li>You are responsible for any activity including requests that occurs under your username.</li>
+					</ul>
+				</li>
+					<br>
+				<li>Service<br>
+					<ul>
+						<li>We reserve the right to refuse service to anyone for any reason at any time.</li>
+						<li>We may but have no obligation to, remove content and accounts containing content that we determine to be unlawful, offensive, threatening, or defamatory.</li>
+						<li>We reserve the right to reclaim usernames on behalf of businesses or individuals that hold legal claim or trademark on those usernames.</li>
+						<li>We reserve the right to terminate any services if the user knowingly displays, distributes, or otherwise makes available CelebWatch content to violate the <a href = "http://www.un.org/en/universal-declaration-human-rights/index.html">Universal Declaration of Human Rights</a>.</li>
+					</ul>
+				</li>
+				<br>
+				<li>Proprietary Rights<br>
+					<ul>
+						<li>CelebWatch does NOT claim ANY ownership rights in the text, files, images, photos, video, sounds, works of authorship, or any other materials that are posted on or used through CelebWatch services.</li>
+					</ul>
+				</li>
+				<br>
+				<li>Amendments<br>
+					<ul>
+						<li>We reserve the right to alter these Terms of Use at any time. If the alterations constitute a material change to the Terns of Use, we will notify you via e-mail.</li>
+					</ul>
+				</li>
+				<br>
+				<li>Termination<br>
+					<ul>
+						<li>We reserve the right to modify or terminate CelebWatch service for any reason, without notice at any time.</li>
+						<li>If you violate any of the terms or otherwise create risk or possible legal exposure for us, we can stop providing service to you.</li>
+					</ul>
+				</li>
+				<br>
+				<br>
+			</ol>
+	</body>
+
+<!-- BOTTOM NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<ul class="navbar-form navbar-left">
+				<p>&copy; 2016 Angela Han, Eunice Kang, Matthew Toma.</p>
+				<p><a href="privacypolicy.html">Privacy Policy</a></p>
+
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			    <li class="active"><a href="admin.php">Admin</a></li>
+			</ul>
+		</div>
+	</nav>
+</html>
